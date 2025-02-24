@@ -1,0 +1,9 @@
+dim a as integer
+dim b as integer
+dim c as integer
+
+a = input()
+b = input()
+
+output(a+b)
+
