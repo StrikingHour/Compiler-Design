@@ -1,5 +1,0 @@
-int n;
-
-for(n=3;n<10;n++){
-    print(n);
-}
