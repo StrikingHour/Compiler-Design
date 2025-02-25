@@ -1,0 +1,76 @@
+In line no 1, Inserting n with type INT_TYPE in symbol table.
+Parsing finished!
+============= INTERMEDIATE CODE===============
+  0: start              -1
+  1: ld_int             30
+  2: store               0
+  3: ld_var              0
+  4: ld_int             10
+  5: lt                 -1
+  6: jmp_false          13
+  7: print_int_value     0
+  8: ld_var              0
+  9: ld_int              1
+ 10: add                -1
+ 11: store               0
+ 12: goto               17
+ 13: ld_var              0
+ 14: ld_int              2
+ 15: add                -1
+ 16: store               0
+ 17: print_int_value     0
+ 18: halt               -1
+============= RUN CODE IN VIRTUAL MACHINE ===============
+
+;start -1
+PC =   0 IR.arg =       -1 AR =   7 Top_position =   0, Top_value =        0
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 0 	stack[8] = 0 	stack[9] = 0 
+
+;ld_int 30
+PC =   1 IR.arg =       30 AR =   7 Top_position =   0, Top_value =        0
+	stack[0] = 30 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 0 	stack[8] = 0 	stack[9] = 0 
+
+;store 0
+PC =   2 IR.arg =        0 AR =   7 Top_position =   1, Top_value =        0
+	stack[0] = 30 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 30 	stack[8] = 0 	stack[9] = 0 
+
+;ld_var 0
+PC =   3 IR.arg =        0 AR =   7 Top_position =   0, Top_value =       30
+	stack[0] = 30 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 30 	stack[8] = 0 	stack[9] = 0 
+
+;ld_int 10
+PC =   4 IR.arg =       10 AR =   7 Top_position =   1, Top_value =        0
+	stack[0] = 30 	stack[1] = 10 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 30 	stack[8] = 0 	stack[9] = 0 
+
+;lt -1
+PC =   5 IR.arg =       -1 AR =   7 Top_position =   2, Top_value =        0
+	stack[0] = 0 	stack[1] = 10 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 30 	stack[8] = 0 	stack[9] = 0 
+
+;jmp_false 13
+PC =   6 IR.arg =       13 AR =   7 Top_position =   1, Top_value =       10
+	stack[0] = 0 	stack[1] = 10 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 30 	stack[8] = 0 	stack[9] = 0 
+
+;ld_var 0
+PC =  13 IR.arg =        0 AR =   7 Top_position =   0, Top_value =        0
+	stack[0] = 30 	stack[1] = 10 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 30 	stack[8] = 0 	stack[9] = 0 
+
+;ld_int 2
+PC =  14 IR.arg =        2 AR =   7 Top_position =   1, Top_value =       10
+	stack[0] = 30 	stack[1] = 2 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 30 	stack[8] = 0 	stack[9] = 0 
+
+;add -1
+PC =  15 IR.arg =       -1 AR =   7 Top_position =   2, Top_value =        0
+	stack[0] = 32 	stack[1] = 2 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 30 	stack[8] = 0 	stack[9] = 0 
+
+;store 0
+PC =  16 IR.arg =        0 AR =   7 Top_position =   1, Top_value =        2
+	stack[0] = 32 	stack[1] = 2 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 32 	stack[8] = 0 	stack[9] = 0 
+
+;print_int_value 0
+PC =  17 IR.arg =        0 AR =   7 Top_position =   0, Top_value =       32
+32
+	stack[0] = 32 	stack[1] = 2 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 32 	stack[8] = 0 	stack[9] = 0 
+
+;halt -1
+PC =  18 IR.arg =       -1 AR =   7 Top_position =  -1, Top_value =        0
+	stack[0] = 32 	stack[1] = 2 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 32 	stack[8] = 0 	stack[9] = 0 
